@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <select id="Thang">
+        <option value="1">Tháng 1</option>
+        <option value="2">Tháng 2</option>
+        <option value="3">Tháng 3</option>
+        <option value="4">Tháng 4</option>
+        <option value="5">Tháng 5</option>
+        <option value="6">Tháng 6</option>
+        <option value="7">Tháng 7</option>
+        <option value="8">Tháng 8</option>
+        <option value="9">Tháng 9</option>
+        <option value="10">Tháng 10</option>
+        <option value="11">Tháng 11</option>
+        <option value="12">Tháng 12</option>
+    </select>
+    <button type="button" onclick="chonthang()"> Tính số ngày</button>
+
+    <script>
+    let chonthang = document.getElementById(Thang.value);
+    // function f() {
+        
+
+        switch (chonthang.value){
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+            alert("Có 31 ngày");
+            break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+            alert("Có 30 ngày";
+            break;
+            case 2:
+            alert("Có thể có 28 hoặc 29 ngày");
+            break;
+        }
+    </script>
+</form>
+
+</body>
+</html>

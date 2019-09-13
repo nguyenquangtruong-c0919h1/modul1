@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img id="Image"  src="image/bong.jpg" height="200" ;/>
+         <p>Click !</p>
+        <input type="button" onclick="moveRight();" value="Click Me"/>
+    <script>
+        let ImgObj = null;
+        function init(){
+        ImgObj = document.getElementById('Image');
+        ImgObj.style.position = 'relative';
+        ImgObj.style.left = '0px';
+        }
+        function moveRight() {
+            ImgObj.style.left = parseInt(ImgObj.style.left) + 10 + 'px';
+
+        }
+        window.onload = init;
+
+        
+    </script>
+</body>
+</html>
