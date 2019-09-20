@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tinh()
+    {
+        for(i=0;i<3;i++)
+        {
+            if(frm_dd.frm_a[i].checked == true)
+            {
+                alert('OK');
+                return true;
+//break;
+            }
+        }
+        if(i==3)
+            alert('Ban phai chon');
+        return false;
+
+    }
+    function tinh1()
+    {
+        if(frm_ddd.frm_nam.checked==false && frm_ddd.frm_nu.checked==false && frm_ddd.frm_khac.checked==false)
+        {
+            alert('Ban phai tron 1');
+            return false;
+        }
+        else
+        {
+            alert("OK 1");
+            return true;
+        }
+    }
+    //************************************************** *****
+    function hienthi(a)
+    {
+        document.pheptinh.manhinh.value+=a;
+    }
+    function tinh()
+    {
+        document.pheptinh.manhinh.value=eval(document.phep tinh.manhinh.value);
+    }
+    function xoa()
+    {
+        document.pheptinh.manhinh.value="";
+    }
+</script>
+
+
+<form id="frm_dd" name="frm_dd" method="post" action="http://www.youtube.com/watch?v=Uquy4fImnLM">
+    <input name="frm_a" type="radio" value="Nam">
+    Nam
+    <input name="frm_a" type="radio" value="Nu">
+    Nu
+    <input name="frm_a" type="radio" value="Khac">
+    Khac
+    <input type="submit" name="Submit" value="OK" onClick="return tinh();">
+    <input type="reset" name="Submit2" value="Reset">
+</form>
+
+
+<form name="frm_ddd" id="frm_ddd">
+    <input name="frm_nam" type="checkbox" id="frm_nam" value="checkbox">
+    Nam
+    <input name="frm_nu" type="checkbox" id="frm_nu" value="checkbox">
+    Nu
+    <input name="frm_khac" type="checkbox" id="frm_khac" value="checkbox">
+    Khac
+    <input type="submit" name="Submit3" value="Ok" onClick="return tinh1();">
+    <input type="reset" name="Submit4" value="Reset">
+</form>
+
+
+
+<form name="pheptinh">
+    <table align="center">
+        <caption>khigiadano<br><input name="manhinh" type="text" size=15></caption>
+        <tr align="center" bgcolor="#00FFFF">
+            <td><input name"n_1" type="button" value="1" onClick="hienthi(this.value)" style="width:25px">
+            <td><input name"n_2" type="button" value="2" onClick="hienthi(this.value)" style="width:25px">
+            <td><input name"n_3" type="button" value="3" onClick="hienthi(this.value)" style="width:25px">
+            <td><input name"cong" type="button" value="+" onClick="hienthi(this.value)" style="width:25px">
+        <tr align="center">
+            <td><input name"n_4" type="button" value="4" onClick="hienthi(this.value)" style="width:25px">
+            <td><input name"n_5" type="button" value="5" onClick="hienthi(this.value)" style="width:25px">
+            <td><input name"n_6" type="button" value="6" onClick="hienthi(this.value)" style="width:25px">
+            <td><input name"tru" type="button" value="-" onClick="hienthi(this.value)" style="width:25px">
+        <tr align="center" bgcolor="#00FFFF">
+            <td><input name"n_7" type="button" value="7" onClick="hienthi(this.value)" style="width:25px">
+            <td><input name"n_8" type="button" value="8" onClick="hienthi(this.value)" style="width:25px">
+            <td><input name"n_9" type="button" value="9" onClick="hienthi(this.value)" style="width:25px">
+            <td><input name"nhan" type="button" value="*" onClick="hienthi(this.value)" style="width:25px">
+        <tr align="center">
+            <td><input name"c" type="button" value="C" onClick="xoa()" style="width:25px">
+            <td><input name"n_0" type="button" value="0" onClick="hienthi(this.value)" style="width:25px">
+            <td><input name"bang" type="button" value="=" onClick="tinh()" style="width:25px">
+            <td><input name"chia" type="button" value="/" onClick="hienthi(this.value)" style="width:25px">
+    </table>
+</form>
+
+</body>
+</html>

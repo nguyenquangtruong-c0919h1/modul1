@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    function snta(){
+        return document.getElementById('biena').value;
+    }
+    function ktsnt(){
+        var dem=0;
+        for(var i=2;i<snta();i++){
+            if(snta()%i==0) {
+                dem++;
+            }
+            if(dem==2){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+
+    }
+    function songuyento(){
+        for(var i=1;i<=snta();i++){
+            if(ktsnt(i)==true){
+                return ("các số nguyên tố là:" + i);
+            }
+            else{
+                return ("không có só nào");
+            }
+        }
+    }
+</script>
+<input type="text" name="" id="biena">
+
+<input type="submit" name="" onclick="document.write(songuyento());" value="ok">
+</body>
+</html>

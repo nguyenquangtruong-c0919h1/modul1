@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="Hienthi"/>
+
+    <br>
+    <br>
+    <button value="1" onclick="getValuePress(this.value)">1</button>
+    <button value="2" onclick="getValuePress(this.value)">2</button>
+    <button value="3" onclick="getValuePress(this.value)">3</button>
+    <button value="+" onclick="getValuePress(this.value)">+</button>
+    <br>
+    <br>
+    <button value="4" onclick="getValuePress(this.value)">4</button>
+    <button value="5" onclick="getValuePress(this.value)">5</button>
+    <button value="6" onclick="getValuePress(this.value)">6</button>
+    <button value="-" onclick="getValuePress(this.value)">-</button>
+    <br>
+    <br>
+    <button value="7" onclick="getValuePress(this.value)">7</button>
+    <button value="8" onclick="getValuePress(this.value)">8</button>
+    <button value="9" onclick="getValuePress(this.value)">9</button>
+    <button value="*" onclick="getValuePress(this.value)">*</button>
+    <br>
+    <br>
+    <button value="C" onclick="xoa(this.value)">C</button>
+    <button value="0" onclick="getValuePress(this.value)">0</button>
+    <button value="=" onclick="tinh(this.value)">=</button>
+    <button value="/" onclick="getValuePress(this.value)">/</button>
+    <script>
+        var Hienthi = document.getElementById("Hienthi");
+           function getValuePress(element) {
+           Hienthi.value = Hienthi.value + element;
+        }
+
+        function xoa() {
+               Hienthi.value="";
+            
+        }
+        function tinh() {
+            chuoi = Hienthi.value;
+            len = chuoi.length;
+            for (i = 0; i < len; i++)
+                if ((chuoi.charAt(i) != "!") || (chuoi.charAt(i) != "^"))
+                    Hienthi.value = eval(chuoi);
+        }
+    </script>
+
+</body>
+</html>
