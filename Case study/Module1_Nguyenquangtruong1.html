@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var name = "Nguyễn Quang Trường";
+    var idCard = "194551865";
+    var day = "20/10/1996";
+    var email = "quangtruong0412@gmail.com";
+    var address = "Đà Nẵng";
+    var custumer = "Gold";
+    var sale = 10;
+    var accompanying = 3;
+    var renDays = 20;
+    var service = "House";
+    var room    = "Vip";
+    var saleRendays = 0;
+    var saleCustumer = null;
+    var currentYear = new Date().getFullYear();
+    var birthday = new Date(day).getFullYear();
+    var ageCustumer = currentYear - birthday ;
+    var ageSale = null;
+    var choose = prompt("1. Show Information Customer.\n"+
+                        "2. Edit Information Customer.\n" +
+                        "3. Show the amount to be paid after discount");
+    switch (choose) {
+        case "1":
+            alert("Information of Custumer \n"+
+                " 1.Name:" + name  +
+                "\n 2.ID Card :" + idCard +
+                "\n 3.Day :" + day +
+                "\n 4.Email :" + email +
+                "\n 5.Address :" + address +
+                "\n 6.Custumer :" + custumer +
+                "\n 7.Accompanying People :" + accompanying +
+                "\n 8.Service :" + service +
+                "\n 9.Room :" + room
+                );
+            break;
+        case "2":
+            var chooseEdit = prompt("Edit Information Customer.\n"+
+                " 1.Name:" + name  +
+                "\n 2.ID Card :" + idCard +
+                "\n 3.Day :" + day +
+                "\n 4.Email :" + email +
+                "\n 5.Address :" + address +
+                "\n 6.Custumer :" + custumer +
+                "\n 7.Accompanying People :" + accompanying +
+                "\n 8.Service :" + service +
+                "\n 9.Room :" + room );
+            switch (chooseEdit) {
+                case "1":
+                    name= prompt("Name");
+                case "2":
+                    idCard= prompt("ID Card");
+                case "3":
+                    day= prompt("Day");
+                case "4":
+                    email= prompt("Email");
+                case "5":
+                    address= prompt("Address");
+                case "6":
+                    custumer= prompt("Custumer");
+                case "7":
+                    accompanying= prompt("Accompanying");
+                case "8":
+                    service= prompt("Sirvice");
+                case "9":
+                    room= prompt("Room");
+                default :
+                    alert("Faile");
+            }
+        case "3":
+            var money = null;
+            if(service=="Villa")
+                service=500;
+            else if(service=="House")
+                service = 300;
+            else
+                service = 100;
+            if(address=="Đà Nẵng")
+                sale= 20;
+                else if(address=="Huế")
+                    sale = 10;
+                    else if(address=="Quảng Nam")
+                        sale = 5;
+                        else
+                            sale = 0;
+            if(renDays>=2&&renDays<=4)
+                saleRendays = 10;
+                    else if(renDays>=5&&renDays<=7)
+                    saleRendays = 20;
+                         else if(renDays>7)
+                        saleRendays = 30;
+            if(custumer=="Diamond ")
+                saleCustumer = 15;
+                else if (custumer=="Platium")
+                    saleCustumer = 10;
+                     else if (custumer=="Gold")
+                        saleCustumer = 5;
+                          else if (custumer=="Silver")
+                            saleCustumer = 2;
+                            else if(custumer= "Member")
+                                saleCustumer = 0;
+            if(ageCustumer>30&&address=="Đà Nẵng")
+                    ageSale = 2;
+                else if(ageCustumer>=20 && ageCustumer<30 && address=="Đà Nẵng")
+                    ageSale = 1;
+                    else
+                        ageSale=0;
+            money=service*renDays*(1-sale/100) - saleRendays - saleCustumer - ageSale;
+            alert("Show the amount to be paid after discount = " + money);
+
+    }
+
+
+
+</script>
+</body>
+</html>
