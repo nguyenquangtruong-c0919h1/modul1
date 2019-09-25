@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label>Caro</label>
+    <p id="caro" ></p>
+    <input type="button" value="Change Value" onclick="change_Value()" />
+<script>
+    let bang = document.getElementById("caro");
+    let board = [];
+    let data = ""
+    for(let i = 0; i<5;i++) {
+        board[i] = new Array(0, 0, 0, 0, 0);
+    }
+        for(let i = 0; i<5; i++){
+            data+="<br/>";
+            for(let j=0; j<5;j++){
+                data+= board[i][j] + " ";
+            }
+        }
+        bang.innerHTML = data;
+    function change_Value() {
+        let x = prompt("X: ");
+        let y = prompt("Y: ");
+        let data = "";
+        board[x][y] = "x";
+
+        for(let i = 0; i<5; i++){
+            data+="<br/>";
+            for(let j=0; j<5;j++){
+                data+= board[i][j] + "&nbsp;&nbsp";
+            }
+        }
+        bang.innerHTML = data;
+
+    }
+
+</script>
+</body>
+</html>
