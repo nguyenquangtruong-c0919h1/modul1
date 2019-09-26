@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let kiemTraSoNguyenTo = prompt(" Nhập vào số nguyên khác 0");
+    function SoNguyenTo(x) {
+        let num= 0;
+        for(let i = 2;i<=x;i++) {
+            if (x % i === 0) {
+                num++;
+                continue;
+            }
+        }
+            if(num<2)
+                alert(x + " Là số nguyên tố");
+            else
+                alert(x + " Không phải là số nguyên tố");
+
+
+    }
+    kiemTraSoNguyenTo = SoNguyenTo(kiemTraSoNguyenTo);
+</script>
+</body>
+</html>

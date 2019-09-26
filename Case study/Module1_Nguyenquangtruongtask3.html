@@ -6,74 +6,133 @@
 </head>
 <body>
 <script>
-    var name = prompt("Name");
-    var checkemail = false;
-    var birthdayCustumer;
+    var nameCustumer = prompt("Enter Name");
+    var checkValidate = false;
     var email;
-    // do {
-    //     checkemail=false;
-    //     birthdayCustumer = prompt("Enter Birthday of you (dd/MM/YY)");
-    //     if (birthdayCustumer.charAt(2)!=='/'||birthdayCustumer.charAt(5)!=='/'){
-    //         alert("You entered the wrong, please enter again ");
-    //
-    //     continue;
-    //     }
-    //     var day = birthdayCustumer.substring(0,2);
-    //     var month = birthdayCustumer.substring(3,5);
-    //     var year = birthdayCustumer.substring(6,10);
-    //     if (!isNaN(day) && !isNaN(month) && !isNaN(year) ) {
-    //         day = Number.parseFloat(day);
-    //         month = Number.parseFloat(month);
-    //         year = Number.parseFloat(year);
-    //         if (Number.isInteger(day) && Number.isInteger(month) && Number.isInteger(year)) {
-    //             if (day > 0 && day < 31 && month > 0 && month <= 12 && year > 1900 && year <= 2019) {
-    //                 checkemail = true;
-    //             }
-    //         }
-    //     }
-    //     if(!checkemail) {
-    //         alert("You entered the wrong, please enter again ");
-    //     }
-    // }while (!checkemail)
-
+    var idCard;
+    var discount;
+    var renDays;
+    var accompanying;
+    nameCustumer = nameCustumer.trim().toLocaleLowerCase();
+    var namespace = "";
+        for(var i = 0; i < nameCustumer.length; i++){
+            if(nameCustumer.charAt(i)===" " && nameCustumer.charAt(i+1)===" "){
+                continue;
+            }if(i===0||nameCustumer.charAt(i-1)===" "){
+                namespace += nameCustumer.charAt(i).toLocaleUpperCase();
+                continue;
+            }
+            namespace += nameCustumer.charAt(i);
+        }
+        nameCustumer = namespace;
     do {
-        checkemail=true;
+        checkValidate = false;
+        birthdayCustumer = prompt("Enter Birthday of you (dd/MM/YY)");
+        if (birthdayCustumer.charAt(2) !== '/' || birthdayCustumer.charAt(5) !== '/') {
+            alert("You entered the wrong, please enter again ");
+
+            continue;
+        }
+        var day = birthdayCustumer.substring(0, 2);
+        var month = birthdayCustumer.substring(3, 5);
+        var year = birthdayCustumer.substring(6, 10);
+        if (!isNaN(day) && !isNaN(month) && !isNaN(year)) {
+            day = Number.parseFloat(day);
+            month = Number.parseFloat(month);
+            year = Number.parseFloat(year);
+            if (Number.isInteger(day) && Number.isInteger(month) && Number.isInteger(year)) {
+                if (day > 0 && day < 31 && month > 0 && month <= 12 && year > 1900 && year <= 2019) {
+                    checkValidate = true;
+                }
+            }
+        }
+        if (!checkValidate) {
+            alert("You entered the wrong, please enter again ");
+        }
+
+    }while (!checkValidate);
+    do {
+        checkValidate=true;
+        email = prompt("Email");
         var checkkytu = 0;
         var checkdoc = 0;
-         email = prompt("Email");
-        for (var i = 0;i< email.length;i++)
+        for (var i = 0;i < email.length;i++)
         {
             if(email.charAt(i)==="@")
             checkkytu++;
             if(email.charAt(i)===".")
             checkdoc++;
         }
-        if(checkkytu!==1||checkdoc<1)
-            // checkemail=false;
-            alert("bạn nhập sai, hãy nhập lại");
+        if(checkkytu!==1||checkdoc<1){
+            checkValidate=false;
+            alert("bạn nhập sai, hãy nhập lại");}
+    }while (!checkValidate);
+    do {
+        checkValidate = false;
+        idCard = prompt("ID Carrd");
+        if (isNaN(idCard)) {
+            alert("It is Invalid");
 
+            continue;
+        }
+        idCard = Number.parseFloat(idCard);
+        if (!Number.isInteger(idCard)) {
+            alert("It is Invalid");
 
-
-    }while (!checkemail)
+            continue;
+        }
+        if (idCard >= 100000000 && idCard <= 999999999) {
+            checkValidate = true;
+        }
+    }while (!checkValidate);
+    do {
+        checkValidate= false;
+        discount = prompt("Discount");
+        if (!isNaN(discount)){
+            discount = Number.parseFloat(discount);
+            if(discount>=0)
+                checkValidate=true;
+        }
+        if(!checkValidate){
+            alert("Plesea Try again");
+        }
+    }while (!checkValidate);
+    do {
+        checkValidate= false;
+        renDays = prompt("RenDays");
+        if (!isNaN(renDays)){
+            renDays = Number.isInteger(renDays);
+            if(renDays>=0)
+                checkValidate=true;
+        }
+        if(!checkValidate){
+            alert("Plesea Try again");
+        }
+    }while (!checkValidate);
+    do {
+        checkValidate= false;
+        accompanying = prompt("Accompanying to people");
+        if (!isNaN(accompanying)){
+            accompanying = Number.isInteger(accompanying);
+            if(accompanying>=0)
+                checkValidate=true;
+        }
+        if(!checkValidate){
+            alert("Plesea Try again");
+        }
+    }while (!checkValidate);
     var address = prompt("Address");
-
-    var idCard = prompt("ID Carrd");
-
     var custumer = prompt("Custumer Type");
-    var sale = prompt("Sale");
-    var accompanying = prompt("Accompanying People");
-    var renDays =prompt("RenDays");
     var service = prompt("Sirvice");
     var room    = prompt("Room");
-
-
     alert("Information of Custumer \n"+
-                " 1.Name:" + name  +
+                " 1.Name:" + nameCustumer +
                 "\n 2.ID Card :" + idCard +
-                // "\n 3.Birthday Custumer :" + birthdayCustumer +
+                "\n 3.Birthday Custumer :" + birthdayCustumer +
                 "\n 4.Email :" + email +
                 "\n 5.Address :" + address +
-                "\n 6.Custumer :" + custumer +
+                // "\n 6.Custumer :" + custumer +
+                "\n RenDays" + renDays +
                 "\n 7.Accompanying People :" + accompanying +
                 "\n 8.Service :" + service +
                 "\n 9.Room :" + room

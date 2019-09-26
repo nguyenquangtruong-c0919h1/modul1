@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" onkeydown="runProgram(event)" id="inputText" />
+<script>
+    let inputText = document.getElementById("inputText");
+    let index=0;
+    let str = "Nguyen Quang Truong";
+    let result = "";
+    function runProgram(event) {
+        if(event.keyCode === 8) {
+            index--;
+
+        }else{
+            result += str.charAt(index);
+          inputText.value = result;
+          index++;
+          if(index === str.length)
+                alert("Xong");
+    }}
+</script>
+</body>
+</html>
