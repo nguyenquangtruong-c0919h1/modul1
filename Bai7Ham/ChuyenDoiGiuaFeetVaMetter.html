@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
-    <input type="button" id="alertMessage" onclick="alertMessage()" value="Click" />
+<br>
+    <input type="text" id="feet" placeholder="Input Feet"/>
+    <input type="button" onclick="feettometter()" value="Feet to Metter"/>
+    <p id = "ketquafeet"></p>
+    </br>
+    <input type="text" id="metter" placeholder="Input Metter"/>
+     <input type="button" onclick="mettertofeet()" value="Feet to Metter"/>
+    <p id = "ketquametter"></p>
+
     <script>
-       function alertMessage() {
-           alert=("Xin Chào");
-       } 
-</script>
+        let inputFeet = document.getElementById("feet");
+        let inputMetter = document.getElementById("metter");
+        let result ="";
+        function feettometter() {
+            result= 0.305*inputFeet.value;
+            document.getElementById("ketquafeet").innerText=result + " metter";
+        }
+        function mettertofeet() {
+            result = 3.275*inputMetter.value;
+            document.getElementById("ketquametter").innerText=result + " feet";
+
+        }
+    </script>
 </body>
 </html>

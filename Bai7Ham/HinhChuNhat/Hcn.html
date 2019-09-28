@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="wight" />
+<input type="text" id="width" />
+<input type="submit" onclick="tinhtoan()"/>
+<script type="text/javascript" src="hcnjv.js"></script>
+<script>
+    let wight1=document.getElementById("wight");
+    let width1=document.getElementById("width");
+    let result = "";
+    function tinhtoan() {
+          let hcn = new tinh()
+              hcn.setwidth(width1);
+              hcn.setwight(wight1);
+              hcn.dientich();
+              hcn.chuvi();
+    } 
+    function f() {
+        
+    }
+</script>
+</body>
+</html>

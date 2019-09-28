@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afe3fdd1-77a4-4a17-b49d-be0384064142" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ChuyenDoiGiuaFeetVaMetter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HamKiemTraSoNguyenTo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ThTimGiaTriNhoNhatCuaMang.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Case study/Module1_Nguyenquangtruongtask3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Case study/Module1_Nguyenquangtruongtask3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChuyenDoiGiuaFeetVaMetter.html" beforeDir="false" afterPath="$PROJECT_DIR$/ChuyenDoiGiuaFeetVaMetter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Case study/Module1_NguyenQuangTruongTask4.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -37,7 +36,10 @@
         <option value="$PROJECT_DIR$/ThTimGiaTriNhoNhatCuaMang.html" />
         <option value="$PROJECT_DIR$/HamKiemTraSoNguyenTo.html" />
         <option value="$PROJECT_DIR$/../Case study/Module1_Nguyenquangtruongtask3.html" />
+        <option value="$PROJECT_DIR$/HinhChuNhat/Hcn.html" />
+        <option value="$PROJECT_DIR$/HinhChuNhat/hcnjv.js" />
         <option value="$PROJECT_DIR$/ChuyenDoiGiuaFeetVaMetter.html" />
+        <option value="$PROJECT_DIR$/../Case study/Module1_NguyenQuangTruongTask4_1.html" />
       </list>
     </option>
   </component>
@@ -53,6 +55,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -60,11 +63,15 @@
               <item name="Bai7Ham" type="b2602c69:ProjectViewProjectNode" />
               <item name="Bai7Ham" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Bai7Ham" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bai7Ham" type="462c0819:PsiDirectoryNode" />
+              <item name="HinhChuNhat" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -108,11 +115,16 @@
       <workItem from="1569415265125" duration="6458000" />
       <workItem from="1569426059879" duration="5435000" />
       <workItem from="1569460907443" duration="1553000" />
+      <workItem from="1569555631443" duration="1593000" />
+      <workItem from="1569559963871" duration="584000" />
+      <workItem from="1569641740391" duration="4332000" />
+      <workItem from="1569656085020" duration="1929000" />
+      <workItem from="1569677004050" duration="2784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19788000" />
+    <option name="totallyTimeSpent" value="31010000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -168,10 +180,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/HinhChuNhat/hcnjv.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/untitled2/ThamSo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/untitled1/Customer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HinhChuNhat/Hcn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ChuyenDoiGiuaFeetVaMetter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="44">
+          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Case study/Module1_NguyenQuangTruongTask4_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Case study/Module1_NguyenQuangTruongTask4_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
