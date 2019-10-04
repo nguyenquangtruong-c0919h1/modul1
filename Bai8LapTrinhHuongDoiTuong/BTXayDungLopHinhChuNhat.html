@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Rectangle = function () {
+
+        this.getWidth = function () {
+            return width;
+        };
+        this.getWight = function () {
+            return wight;
+        };
+        this.getArea = function () {
+            return this.wight * this.width;
+        };
+        this.getChuvi = function () {
+            return (this.width + this.wight) * 2
+        };
+        this.setWidth = function (width) {
+            this.width = width;
+        };
+        this.setWight = function (wight) {
+            this.wight = wight;
+        }
+    };
+    let rectangle = new Rectangle();
+    rectangle.setWidth(20);
+    rectangle.setWight(10);
+    let area = rectangle.getArea();
+    let chuVi = rectangle.getChuvi();
+    alert("Dien tich hinh chu nhat la" + area + "\n Chu vi hinh chu nhat la " + chuVi);
+    rectangle.setWidth(50);
+    rectangle.setWight(100);
+    area = rectangle.getArea();
+    chuVi = rectangle.getChuvi();
+    alert("Dien tich hinh chu nhat la" + area + "\n Chu vi hinh chu nhat la " + chuVi);
+</script>
+</body>
+</html>

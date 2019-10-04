@@ -6,16 +6,54 @@
 </head>
 <body>
 <script>
-    let menu = ["Add New Customer", "Display Information Customer",
-        "Edit Information Customer","Delete customer","Exit"];
     let result = "";
-    // function displayMainMenu() {
-            for (let i=0;i<menu.length;i++){
-            result += "\n" + (i+1) + ". "+ menu[i];
+    function displayMainMenu() {
+        let menu = ["Add New Customer", "Display Information Customer",
+            "Edit Information Customer", "Delete customer", "Exit"];
+        for (let i = 0; i < menu.length; i++) {
+            result += "\n" + (i + 1) + ". " + menu[i];
         }
-    // }
-    //     let main = displayMainMenu();
-        alert(result);
+
+        function arrShowListCustomer() {
+            let arrListCustomer = [];
+            let name = prompt("Enter Name");
+            let idCard = prompt(" Enter ID Card");
+            let dayOfBirth = prompt(" Enter Day Of Birth");
+            let email = prompt(" Enter Email");
+            let address = prompt("Enter Adress");
+            let customerType = prompt(" Enter Customer Type");
+            let disCount = prompt("Enter DisCount");
+            let accompanying = prompt("Enter Accompanying");
+            let renDays = prompt("Enter RenDays");
+            arrListCustomer.push(name, idCard, dayOfBirth, email,
+                address, customerType, disCount, accompanying, renDays);
+            return arrListCustomer;
+        }
+        function
+
+        result = prompt(result);
+        switch (result) {
+            case "1": {
+                let showList = arrShowListCustomer();
+                showList = prompt(showList);
+                let main = displayMainMenu();
+                alert(main);
+
+            }
+            case "2" : {
+                let showList = arrShowListCustomer();
+                for (let i = 0; i<showList.length;i++){
+
+                }}
+
+
+
+        }
+    }
+    let show = displayMainMenu();
+    alert(show);
+
+
 </script>
 </body>
 </html>

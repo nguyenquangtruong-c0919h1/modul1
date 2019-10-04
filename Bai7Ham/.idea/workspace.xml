@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afe3fdd1-77a4-4a17-b49d-be0384064142" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChuyenDoiGiuaFeetVaMetter.html" beforeDir="false" afterPath="$PROJECT_DIR$/ChuyenDoiGiuaFeetVaMetter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Case study/Module1_NguyenQuangTruongTask4.html" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case study/Module1_NguyenQuangTruongTask5_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case study/a.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Case study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Case study/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Case study/Module1_NguyenQuangTruongTask5.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Case study/Module1_NguyenQuangTruongTask5.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -55,7 +56,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -72,13 +72,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Case study" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Bai8LapTrinhHuongDoiTuong" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -120,11 +121,12 @@
       <workItem from="1569641740391" duration="4332000" />
       <workItem from="1569656085020" duration="1929000" />
       <workItem from="1569677004050" duration="2784000" />
+      <workItem from="1569986163332" duration="61000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31010000" />
+    <option name="totallyTimeSpent" value="31071000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -222,12 +224,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Case study/Module1_NguyenQuangTruongTask4_2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Case study/Module1_NguyenQuangTruongTask4_2.html" />
   </component>
 </project>

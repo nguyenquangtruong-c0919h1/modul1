@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let circle = function (radius,color){
+        this.radius = radius;
+        this.color = color;
+        this.getRadius = function () {
+            return radius;
+        };
+        this.getColor = function () {
+            return color;
+        };
+        this.getArea = function () {
+                return Math.PI*radius*radius;
+        };
+
+        this.setRadius = function (radius) {
+            this.radius = radius;
+        }
+     };
+     let Circle = new circle(2);
+    let radius = Circle.getRadius();
+    let area = Circle.getArea();
+    alert("Ban kinh hinh tron = "+ radius + "\n Dien tich hinh tron =" + area);
+</script>
+</body>
+</html>
